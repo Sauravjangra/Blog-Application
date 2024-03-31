@@ -5,9 +5,8 @@ import bodyParser from 'body-parser';
 
 import Connection from './database/db.js';
 import Router from './routes/route.js';
-// import path from 'path';
 
-// const __dirname = path.resolve();
+
 
 dotenv.config();
 
@@ -18,15 +17,7 @@ app.use(bodyParser.json({ extended: true}))
 app.use(bodyParser.urlencoded({ extended: true}))
 app.use('/', Router);
 
-// app.use(express.static(path.join(__dirname, "./client/build")));
 
-// app.get('/', function (_, res) {
-//     res.sendFile(path.join(__dirname, "./client/build/index.html"), function(error) {
-//         if (error) {
-//             res.status(500).send(error);
-//         }
-//     });
-// });
 
 app.get('/', (req, res) => {
     res.send('Hello from Express server!');
