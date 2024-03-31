@@ -15,13 +15,13 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json({ extended: true}))
 app.use(bodyParser.urlencoded({ extended: true}))
-// app.use('/', Router);
+app.use('/', Router);
 
 
 
-app.get('/', (req, res) => {
-    res.send('Hello from Express server!');
-  });
+// app.get('/', (req, res) => {
+//     res.send('Hello from Express server!');
+//   });
 
 
 const PORT = process.env.PORT || 8000;
