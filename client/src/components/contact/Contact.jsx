@@ -1,12 +1,12 @@
 import { Box, styled, Typography, Link } from '@mui/material';
-import { GitHub, Instagram, Email } from '@mui/icons-material';
+import { Instagram, Email } from '@mui/icons-material';
 
 const Banner = styled(Box)`
-    background-image: url(http://mrtaba.ir/image/bg2.jpg);
+    background-image: url(https://img.freepik.com/free-vector/customer-support-flat-design-illustration_23-2148889374.jpg?w=740&t=st=1713884911~exp=1713885511~hmac=e01353620802b7426a1f9b3cd16964f47e57d2ace370b9ae8ce4cce75e9c89e3);
     width: 100%;
     height: 50vh;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     display: flex;
     justify-content: center;
     align-items: center;
